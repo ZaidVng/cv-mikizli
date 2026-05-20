@@ -1,54 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-  margin:0;
-  padding:40px;
-  background:#f4f4f4;
-  font-family:Arial, sans-serif;
+    font-family:'Poppins', sans-serif;
+    background:linear-gradient(135deg,#e0e7ff,#f8fafc);
+    padding:40px;
+    color:#1e293b;
 }
 
 .container{
-  max-width:900px;
-  margin:auto;
-  background:white;
-  padding:40px;
-  border-radius:20px;
-  box-shadow:0 0 20px rgba(0,0,0,0.1);
+    max-width:1000px;
+    margin:auto;
+    background:white;
+    padding:60px;
+    border-radius:30px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.1);
 }
 
 .perfil{
-  text-align:center;
+    text-align:center;
+    margin-bottom:50px;
 }
 
 .perfil img{
-  width:180px;
-  height:180px;
-  object-fit:cover;
-  border-radius:50%;
-  border:5px solid #111827;
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #0f172a;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
 }
 
 .perfil h1{
-  margin-top:20px;
-  font-size:40px;
+    font-size:64px;
+    margin-top:25px;
+    font-weight:700;
 }
 
 .perfil p{
-  color:gray;
+    margin-top:10px;
+    color:#64748b;
+    font-size:24px;
 }
 
 section{
-  margin-top:40px;
+    margin-top:40px;
+    padding:30px;
+    border-radius:20px;
+    background:#f8fafc;
+    transition:0.3s;
+}
+
+section:hover{
+    transform:translateY(-5px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
 }
 
 h2{
-  color:#111827;
-  border-bottom:2px solid #111827;
-  padding-bottom:10px;
+    margin-bottom:20px;
+    color:#0f172a;
+    font-size:32px;
+}
+
+p{
+    line-height:1.8;
+    font-size:18px;
 }
 
 ul{
-  padding-left:20px;
+    padding-left:20px;
 }
 
 li{
-  margin-top:10px;
+    margin-top:12px;
+    font-size:18px;
+}
+
+@media(max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    .container{
+        padding:30px;
+    }
+
+    .perfil h1{
+        font-size:42px;
+    }
+
+    .perfil p{
+        font-size:18px;
+    }
+
+    .perfil img{
+        width:170px;
+        height:170px;
+    }
 }
